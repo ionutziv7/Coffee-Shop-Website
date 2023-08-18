@@ -16,6 +16,7 @@
 :root {
   --black: #13131a;
   --white: #fff;
+  --main-color: #ffc65d;
 }
 
 html {
@@ -44,22 +45,26 @@ body {
 /* Header starts */
 .header {
   background: var(--black);
-  padding: 5rem 7%;
+  padding: 2rem 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  border-bottom: 0.1rem solid var(--main-color);
 }
 
 .header .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .header .logo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header .navbar {
@@ -74,7 +79,7 @@ body {
 }
 
 .header .navbar a:hover {
-  color: rgb(43, 104, 158);
+  color: var(--main-color);
 }
 
 .header #menu-icon {
@@ -110,4 +115,108 @@ body {
   font-size: 1.6rem;
   width: 50rem;
 }
+
+.header .shopping-cart-container {
+  position: absolute;
+  top: 110%;
+  right: -100%;
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  height: 90vh;
+  width: 30rem;
+  background: var(--white);
+  color: var(--black);
+  transition: 0.5s all ease-in-out;
+}
+
+.header .shopping-cart-container.active {
+  right: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.header .shopping-cart-container .cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.header .shopping-cart-container .cart-item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.header .shopping-cart-container .cart-item span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header .shopping-cart-container .cart-item .remove {
+  cursor: pointer;
+  font-size: 2.2rem;
+}
 /* Header ends */
+
+/* Media queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 5rem;
+  }
+
+  .header #menu-icon {
+    display: initial;
+  }
+
+  .header .navbar {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 9rem);
+    background: var(--white);
+    width: 27rem;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .header .navbar.active {
+    right: 0;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .header .navbar a {
+    display: block;
+    color: var(--black);
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+
+  .header .search-box input {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 2rem 5rem;
+  }
+
+  .header .search-box input {
+    width: 30rem;
+  }
+}
