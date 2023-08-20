@@ -191,12 +191,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60rem;
+  max-width: 70rem;
   width: 100%;
 }
 
 .home .content h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
   color: var(--white);
 }
 
@@ -208,6 +208,28 @@ section {
 }
 
 /* Home section ends */
+
+/* About section starts */
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--white);
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  bottom: -0.5rem;
+  left: 50%;
+  width: 15rem;
+  transform: translateX(-50%);
+  height: 0.2rem;
+  border-bottom: 0.2rem solid var(--main-color);
+}
+/* About section ends */
 
 /* Media queries */
 @media (max-width: 991px) {
