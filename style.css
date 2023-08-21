@@ -15,6 +15,7 @@
 
 :root {
   --black: #13131a;
+  --black-2: #20202b;
   --white: #fff;
   --main-color: #925f3f;
   --btn-hover: #673025;
@@ -41,6 +42,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: var(--black);
+  color: var(--white);
 }
 
 section {
@@ -131,7 +133,7 @@ span {
 }
 
 .header .search-box.active {
-  top: 110%;
+  top: 100%;
   transform: scaleY(1);
   transition: 0.2s all linear;
 }
@@ -144,7 +146,7 @@ span {
 
 .header .shopping-cart-container {
   position: absolute;
-  top: 110%;
+  top: 100%;
   right: -100%;
   display: flex;
   padding: 1rem 2rem;
@@ -214,7 +216,7 @@ span {
 }
 
 .home .content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--white);
   margin: 2rem 0;
   text-align: center;
@@ -285,6 +287,73 @@ span {
 }
 /* About section ends */
 
+/* Menu section starts */
+.menu {
+  background: var(--black-2);
+}
+
+.menu-con {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 35rem));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.menu-con .menu-item {
+  width: 100%;
+  height: 33rem;
+  border: 0.2rem solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+}
+
+.menu-con .menu-item:hover {
+  background: var(--black);
+}
+
+.menu-con .menu-item .img-con {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  transition: 0.4s all ease-in-out;
+}
+
+.menu-con .menu-item .img-con:hover {
+  transform: scale(1.1) rotate(7deg);
+}
+
+.menu-con .menu-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.menu-con .menu-item h3 {
+  font-size: 1.8rem;
+}
+
+.menu-con .menu-item .item-price {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  color: var(--main-color);
+}
+
+.menu-con .menu-item .prp {
+  font-size: 1.7rem;
+  color: var(--white);
+  text-decoration: line-through;
+}
+/* Menu section ends */
+
 /* Media queries */
 @media (max-width: 991px) {
   html {
@@ -316,7 +385,7 @@ span {
   .header .navbar {
     position: absolute;
     right: -100%;
-    top: 110%;
+    top: 100%;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 9rem);
@@ -366,5 +435,16 @@ span {
 
   .home .content p {
     text-align: left;
+  }
+}
+
+@media (max-width: 330px) {
+  html {
+    font-size: 48%;
+  }
+
+  .home .content {
+    max-width: 37rem;
+    width: 100%;
   }
 }
