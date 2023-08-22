@@ -252,6 +252,7 @@ span {
 
 .about .about-content {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
