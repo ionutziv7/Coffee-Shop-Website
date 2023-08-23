@@ -12,6 +12,7 @@ Technologies used:
 Tools used:
 - Visual Studio Code
 - Brave Browser
+- Firefox Browser
 - Live Server
 - Terminal
 - Integrated Terminal
