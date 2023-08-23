@@ -64,6 +64,10 @@ section {
   transition: 0.3s all linear;
 }
 
+.text-center {
+  text-align: center;
+}
+
 span {
   color: var(--main-color);
 }
@@ -342,13 +346,14 @@ span {
   font-size: 1.8rem;
 }
 
-.menu-con .menu-item .item-price {
+.item-price {
   font-size: 2.5rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   color: var(--main-color);
+  text-align: center;
 }
 
-.menu-con .menu-item .prp {
+.prp {
   font-size: 1.7rem;
   color: var(--white);
   text-decoration: line-through;
@@ -370,21 +375,28 @@ span {
   margin-bottom: 3rem;
 }
 
+.product-item {
+  width: 100%;
+  height: 37rem;
+  border: 0.2rem solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+}
+
 .products-con .product-item .icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-}
-
-.products-con .product-item:hover {
-  background: var(--black-2);
 }
 
 .products-con .product-item .icons i {
   border: 0.2rem solid var(--main-color);
-  font-size: 2.2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 0.7rem;
   margin-left: 1rem;
   cursor: pointer;
 }
@@ -394,16 +406,15 @@ span {
   color: var(--black);
 }
 
-.products-con .product-item {
-  border: 0.2rem solid var(--main-color);
-  height: 35rem;
+.products-con .product-item:hover {
+  background: var(--black-2);
 }
 
 .products-con .product-item .image-con {
-  width: 17rem;
-  height: 17rem;
+  width: 13rem;
+  height: 13rem;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .product-item .image-con img {
@@ -418,10 +429,9 @@ span {
   width: 17%;
 }
 
-.products-con .product-item h2 {
-  text-align: center;
+.product-item h3 {
   font-size: 2rem;
-  margin: 1rem 0 1.5rem;
+  margin: 0.7rem 0;
 }
 
 .products-con .product-item .stars {
@@ -429,14 +439,14 @@ span {
 }
 
 .products-con .product-item .stars i {
-  font-size: 2rem;
+  font-size: 1.7rem;
   cursor: pointer;
   color: var(--main-color);
 }
+
 .products-con .product-item .stars i:hover {
   color: var(--white);
 }
-
 /* Products section ends */
 
 /* Media queries */
