@@ -22,3 +22,9 @@ shoppingIcon.onclick = () => {
   navbar.classList.remove("active");
   searchBox.classList.remove("active");
 };
+
+window.onscroll = () => {
+  shoppingCart.classList.remove("active");
+  navbar.classList.remove("active");
+  searchBox.classList.remove("active");
+}

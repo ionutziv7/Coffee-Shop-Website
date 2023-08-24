@@ -32,12 +32,20 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
   width: 0.8rem;
-  background: #fff;
+  background: var(--black-2);
 }
 
 html::-webkit-scrollbar-thumb {
   width: 0.8rem;
   border-radius: 5rem;
+  background: var(--main-color);
+  transition: 0.3s all linear;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  width: 0.8rem;
+  border-radius: 5rem;
+  background: var(--btn-hover);
 }
 
 body {
@@ -103,7 +111,7 @@ span {
 }
 
 .header .navbar a {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: var(--white);
   margin-left: 2rem;
 }
@@ -244,7 +252,7 @@ span {
   content: "";
   bottom: -0.5rem;
   left: 50%;
-  width: 12%;
+  width: 16rem;
   transform: translateX(-50%);
   height: 0.2rem;
   border-bottom: 0.2rem solid var(--main-color);
@@ -377,7 +385,7 @@ span {
 
 .product-item {
   width: 100%;
-  height: 37rem;
+  height: 43rem;
   border: 0.2rem solid var(--main-color);
   display: flex;
   flex-direction: column;
@@ -395,8 +403,8 @@ span {
 
 .products-con .product-item .icons i {
   border: 0.2rem solid var(--main-color);
-  font-size: 1.5rem;
-  padding: 0.7rem;
+  font-size: 1.7rem;
+  padding: 1rem;
   margin-left: 1rem;
   cursor: pointer;
 }
@@ -411,9 +419,9 @@ span {
 }
 
 .products-con .product-item .image-con {
-  width: 13rem;
-  height: 13rem;
-  margin: 0 auto;
+  width: 17rem;
+  height: 17rem;
+  margin: 1rem 0 0.5rem 0;
   margin-top: 1rem;
 }
 
@@ -426,7 +434,7 @@ span {
 }
 
 .products .heading::after {
-  width: 17%;
+  width: 23rem;
 }
 
 .product-item h3 {
@@ -439,7 +447,7 @@ span {
 }
 
 .products-con .product-item .stars i {
-  font-size: 1.7rem;
+  font-size: 2rem;
   cursor: pointer;
   color: var(--main-color);
 }
@@ -448,6 +456,71 @@ span {
   color: var(--white);
 }
 /* Products section ends */
+
+/* Review section starts */
+.reviews {
+  background: var(--black-2);
+}
+
+.reviews .heading::after {
+  width: 32rem;
+}
+
+.reviews-con {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 35rem));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.reviews-con .review {
+  border: 0.2rem solid var(--main-color);
+  padding: 2rem;
+}
+
+.reviews-con .review:hover {
+  background: var(--black);
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.reviews-con .review i {
+  font-size: 2.7rem;
+  color: var(--main-color);
+}
+
+.reviews-con .review p {
+  font-size: 1.4rem;
+  line-height: 1.78;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.reviews-con .review .img-con {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.reviews-con .review .img-con img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reviews-con .review h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Review section ends */
 
 /* Media queries */
 @media (max-width: 991px) {
@@ -484,7 +557,7 @@ span {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 9rem);
-    background: var(--white);
+    background: var(--main-color);
     width: 27rem;
     transition: 0.5s all ease-in-out;
   }
@@ -496,9 +569,13 @@ span {
 
   .header .navbar a {
     display: block;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
     margin: 2rem 0;
+  }
+
+  .header .navbar a:hover {
+    color: var(--black);
   }
 
   .header .search-box input {
