@@ -519,8 +519,60 @@ span {
   font-weight: 600;
   margin-top: 1rem;
 }
-
 /* Review section ends */
+
+/* Contact section starts */
+.contact .heading::after {
+  width: 22rem;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row .form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+}
+
+.contact .row .form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.contact .row .form .input-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background: var(--black-2);
+  border: var(--main-color);
+}
+
+.contact .row .form .input-box span {
+  color: var(--white);
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contact .row .form .input-box input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: var(--white);
+  text-transform: none;
+  background: none;
+}
+/* Contact section ends */
 
 /* Media queries */
 @media (max-width: 991px) {
