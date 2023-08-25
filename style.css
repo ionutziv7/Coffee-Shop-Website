@@ -523,7 +523,7 @@ span {
 
 /* Contact section starts */
 .contact .heading::after {
-  width: 22rem;
+  width: 19rem;
 }
 
 .contact .row {
@@ -573,6 +573,67 @@ span {
   background: none;
 }
 /* Contact section ends */
+
+/* Blogs section starts */
+.blogs {
+  background: var(--black-2);
+}
+
+.blogs .heading::after {
+  width: 17rem;
+}
+
+.blogs-con {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 35rem));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blogs-con .blog {
+  border: 0.2rem solid var(--main-color);
+}
+
+.blogs-con .blog:hover .img-con img {
+  transform: scale(1.12);
+}
+
+.blogs-con .blog .img-con {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  transition: 0.3s all linear;
+}
+
+.blogs-con .blog .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s all linear;
+}
+
+.blogs-con .blog .content {
+  padding: 2rem;
+}
+
+.blogs-con .blog .content .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blogs-con .blog .content span {
+  font-size: 1.6rem;
+}
+
+.blogs-con .blog .content p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+/* Blogs section ends */
 
 /* Media queries */
 @media (max-width: 991px) {
