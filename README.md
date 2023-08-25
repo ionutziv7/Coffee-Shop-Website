@@ -19,3 +19,8 @@ Tools used:
 - Git
 - GitHub
 - Prettier
+
+Preview
+
+![Coffee Shop Website](images/coffee-shop.webp)
+
