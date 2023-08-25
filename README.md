@@ -3,6 +3,7 @@
 ### Design and Development of a Coffee Shop Website
 
 Technologies used:
+
 - HTML
 - CSS
 - HTML5
@@ -10,6 +11,7 @@ Technologies used:
 - JavaScript
 
 Tools used:
+
 - Visual Studio Code
 - Brave Browser
 - Firefox Browser
@@ -22,7 +24,6 @@ Tools used:
 
 Preview
 
-![Coffee Shop Website](images/coffee-shop.webp)
-
-
-Link: &rarr; https://browse-coffee-shop.netlify.app/
+<a href="https://browse-coffee-shop.netlify.app/" target="_blank">
+  <img src="images/coffee-shop.webp" alt="coffee shop" />
+</a>
