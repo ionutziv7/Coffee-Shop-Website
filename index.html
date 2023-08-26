@@ -13,6 +13,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header starts -->
@@ -66,14 +72,49 @@
 
     <!-- Home section starts -->
     <section class="home" id="home">
-      <div class="content">
-        <h1>Fresh Coffee In The Morning</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eius
-          autem tenetur corporis temporibus dolorum lorem, ipsum dolor cat
-          color.
-        </p>
-        <a href="#about" class="btn">Get Yours Now</a>
+      <!-- Swiper slides -->
+      <div class="swiper mySwiper home-swiper">
+        <div class="swiper-wrapper slides-con">
+          <!-- slide 1 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-1">
+              <h1>Fresh Coffee In The Morning</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-2">
+              <h1>The Best Coffee In Town</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-3">
+              <h1>Give It A Try, Enjoy</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- Home section ends -->
@@ -365,6 +406,9 @@
       </div>
     </section>
     <!-- Blogs section ends -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- custom js file -->
     <script src="script.js"></script>
