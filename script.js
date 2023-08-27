@@ -4,6 +4,7 @@ const menuIcon = document.querySelector("#menu-icon");
 const searchBox = document.querySelector(".search-box");
 const navbar = document.querySelector(".header .navbar");
 const shoppingCart = document.querySelector(".shopping-cart-container");
+const toTop = document.querySelector("#to-top");
 
 searchIcon.onclick = () => {
   searchBox.classList.toggle("active");
@@ -27,6 +28,7 @@ window.onscroll = () => {
   shoppingCart.classList.remove("active");
   navbar.classList.remove("active");
   searchBox.classList.remove("active");
+  toTop.classList.toggle("active", window.scrollY > 300);
 };
 
 // Swiper
