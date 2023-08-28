@@ -21,9 +21,11 @@ Tools used:
 - Git
 - GitHub
 - Prettier
+- Netlify to host and deploy for production
+- cwebp for images with webp extension
 
-Preview
+Preview of home section
 
 <a href="https://browse-coffee-shop.netlify.app/" target="_blank">
-  <img src="images/coffee-shop.webp" alt="coffee shop" />
+  <img src="images/coffeeShop.webp" alt="coffee shop" />
 </a>
