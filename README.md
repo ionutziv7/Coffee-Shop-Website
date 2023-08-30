@@ -15,6 +15,7 @@ Tools used:
 - Visual Studio Code
 - Brave Browser
 - Firefox Browser
+- Chrome Browser
 - Live Server
 - Terminal
 - Integrated Terminal
