@@ -209,6 +209,12 @@ span {
   cursor: pointer;
   font-size: 2.2rem;
 }
+
+.header .shopping-cart-container .total {
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 /* Header ends */
 
 /* Home section starts */

@@ -22,7 +22,9 @@ Tools used:
 - GitHub
 - Prettier
 - Netlify to host and deploy for production
-- cwebp for images with webp extension
+- cwebp for compress and change images from jpg and png to webp extension
+- Chrome DevTools
+- Firefox DevTools
 
 Preview of website
 
