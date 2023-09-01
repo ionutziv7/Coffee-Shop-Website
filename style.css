@@ -215,6 +215,25 @@ span {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+.cart-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: .2rem solid var(--main-color);
+  padding: 1rem;
+}
+
+.close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  padding: .5rem;
+  color: var(--white);
+  background: var(--main-color);
+}
 /* Header ends */
 
 /* Home section starts */
