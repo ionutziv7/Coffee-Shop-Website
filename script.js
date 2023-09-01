@@ -7,6 +7,7 @@ const shoppingCart = document.querySelector(".shopping-cart-container");
 const toTop = document.querySelector("#to-top");
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header .navbar a");
+const closeCart = document.querySelector('.close-cart');
 
 searchIcon.onclick = () => {
   searchBox.classList.toggle("active");
@@ -26,6 +27,10 @@ shoppingIcon.onclick = () => {
   navbar.classList.remove("active");
   searchBox.classList.remove("active");
 };
+
+closeCart.onclick = () => {
+  shoppingCart.classList.remove("active");
+}
 
 window.onscroll = () => {
   // menuIcon.classList.remove("fa-times");
