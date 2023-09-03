@@ -205,6 +205,7 @@ span {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
 .header .shopping-cart-container .cart-item .remove {
   cursor: pointer;
   font-size: 2.2rem;
@@ -216,11 +217,18 @@ span {
   font-weight: bold;
 }
 
+#quantity {
+  display: inline;
+  width: 17%;
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+
 .cart-title {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  border-bottom: .2rem solid var(--main-color);
+  border-bottom: 0.2rem solid var(--main-color);
   padding: 1rem;
 }
 
@@ -230,7 +238,7 @@ span {
   right: 2rem;
   cursor: pointer;
   font-size: 2.2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   color: var(--white);
   background: var(--main-color);
 }
