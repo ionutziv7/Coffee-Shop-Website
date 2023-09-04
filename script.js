@@ -34,7 +34,6 @@ closeCart.onclick = () => {
 
 window.onscroll = () => {
   // menuIcon.classList.remove("fa-times");
-  shoppingCart.classList.remove("active");
   navbar.classList.remove("active");
   searchBox.classList.remove("active");
   toTop.classList.toggle("active", window.scrollY > 300);
