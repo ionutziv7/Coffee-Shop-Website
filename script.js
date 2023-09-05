@@ -7,7 +7,8 @@ const shoppingCart = document.querySelector(".shopping-cart-container");
 const toTop = document.querySelector("#to-top");
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header .navbar a");
-const closeCart = document.querySelector('.close-cart');
+const closeCart = document.querySelector(".close-cart");
+const removeItem = document.querySelectorAll(".remove-item");
 
 searchIcon.onclick = () => {
   searchBox.classList.toggle("active");
@@ -30,7 +31,13 @@ shoppingIcon.onclick = () => {
 
 closeCart.onclick = () => {
   shoppingCart.classList.remove("active");
-}
+};
+
+removeItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.parentElement.remove();
+  });
+});
 
 window.onscroll = () => {
   // menuIcon.classList.remove("fa-times");
