@@ -9,6 +9,7 @@ let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header .navbar a");
 const closeCart = document.querySelector(".close-cart");
 const removeItem = document.querySelectorAll(".remove-item");
+const addCartBtn = document.querySelectorAll(".add-cart");
 
 searchIcon.onclick = () => {
   searchBox.classList.toggle("active");
@@ -33,8 +34,25 @@ closeCart.onclick = () => {
   shoppingCart.classList.remove("active");
 };
 
+addCartBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    let menuItem = document.createElement("div");
+    menuItem.classList.add("cart-item");
+
+    menuItem.innerHTML = `
+      <img src="images/cart-2.png" alt="cart item" />
+      <input type="number" name="quantity" id="quantity" class="quantity" min="0" value="0">
+      <span class="price">$25.99</span>
+      <div class="remove-item fas fa-times"></div>
+    `;
+
+    shoppingCart.appendChild(menuItem);
+  });
+});
+
 removeItem.forEach((item) => {
   item.addEventListener("click", () => {
+    console.log("clikded");
     item.parentElement.remove();
   });
 });
