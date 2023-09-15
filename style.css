@@ -169,14 +169,14 @@ span {
   width: 50rem;
 }
 
- .shopping-cart-container {
+.shopping-cart-container {
   position: absolute;
   top: 100%;
   right: -100%;
   display: flex;
   padding: 1rem 2rem;
   flex-direction: column;
-  
+
   width: 30rem;
   background: var(--white);
   color: var(--black);
@@ -741,6 +741,28 @@ span {
 /* Blogs section ends */
 
 /* Footer section starts */
+.footer .share {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--white);
+  border: 0.2rem solid var(--main-color);
+  margin: 0.3rem;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.footer .share a:hover {
+  background: var(--main-color);
+  border: 0.2rem solid var(--white);
+}
+
 .footer .links-con {
   display: flex;
   flex-wrap: wrap;
@@ -753,11 +775,13 @@ span {
   color: var(--white);
   padding: 1rem 2.7rem;
   background: var(--black-2);
+  border: 0.2rem solid var(--main-color);
 }
 
 .footer .links-con a:hover {
-  background: var(--btn-hover);
+  background: var(--main-color);
   transform: skewY(3deg);
+  border: 0.2rem solid var(--white);
 }
 
 .footer p {
@@ -767,6 +791,10 @@ span {
   margin-top: 2rem;
 }
 
+.rights {
+  color: var(--main-color);
+}
+
 .to-top {
   position: fixed;
   right: 3%;
@@ -774,7 +802,7 @@ span {
   z-index: 100;
   padding: 1rem;
   border-radius: 1rem;
-  border: 0.3rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   cursor: pointer;
   font-size: 2rem;
   color: var(--white);
@@ -783,10 +811,10 @@ span {
 }
 
 .to-top:hover {
-  border: 0.3rem solid var(--btn-hover);
-  color: var(--main-color);
-  background: var(--black);
+  color: var(--white);
   font-weight: bold;
+  background: var(--main-color);
+  border: 0.2rem solid var(--white);
 }
 
 .to-top.active {
