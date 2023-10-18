@@ -38,7 +38,7 @@
       </div>
 
       <div class="icons">
-        <div class="fas fa-cart-shopping" id="shopping-icon"></div>
+        <i class="fas fa-cart-shopping" id="cart-icon" data-quantity="0"></i>
         <div class="fas fa-search" id="search-icon"></div>
         <div class="fas fa-bars" id="menu-icon"></div>
       </div>
@@ -49,29 +49,20 @@
         <label for="search-input"></label>
       </div>
 
-      <!-- shopping-cart -->
-      <div class="shopping-cart-container">
-        <div class="cart-title">Your Cart</div>
-        <div class="close-cart fas fa-times"></div>
-        <!-- <div class="cart-item">
-          <img src="images/cart-1.png" alt="cart item" />
-          <input type="number" name="quantity" id="quantity" class="quantity" min="0" value="0">
-          <span class="price">$25.99</span>
-          <div class="remove-item fas fa-times"></div>
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
         </div>
-        <div class="cart-item">
-          <img src="images/cart-2.png" alt="cart item" />
-          <input type="number" name="quantity" id="quantity" class="quantity" min="0" value="0">
-          <span class="price">$25.99</span>
-          <div class="remove-item fas fa-times"></div>
-        </div>
-        <div class="cart-item">
-          <img src="images/cart-3.png" alt="cart item" />
-          <input type="number" name="quantity" id="quantity" class="quantity" min="0" value="0">
-          <span class="price">$25.99</span>
-          <div class="remove-item fas fa-times"></div>
-        </div> -->
-        <div class="total" id="total">Total: $0</div>
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy">Pay Now</button>
+        <!-- Close Cart -->
+        <i class="fas fa-times" id="close-cart"></i>
       </div>
     </header>
     <!-- Header ends -->
@@ -159,51 +150,57 @@
       <h1 class="heading">OUR <span>MENU</span></h1>
 
       <div class="menu-con">
-        <div class="menu-item">
+        <!-- Menu 1 -->
+        <div class="menu-item product-box">
           <div class="img-con">
-            <img src="images/menu-1.jpg" alt="" />
+            <img src="images/menu-1.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Tasty And Healthy</h3>
           <h2 class="item-price">$17.49 <span class="prp">20.99</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
+        <!-- Menu 2 -->
         <div class="menu-item">
           <div class="img-con">
-            <img src="images/menu-2.jpg" alt="" />
+            <img src="images/menu-2.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Fresh Cappuccino</h3>
           <h2 class="item-price">$12.49 <span class="prp">15.50</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
+        <!-- Menu 3 -->
         <div class="menu-item">
           <div class="img-con">
-            <img src="images/menu-3.jpg" alt="" />
+            <img src="images/menu-3.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Tasty And Healthy</h3>
           <h2 class="item-price">$27.49 <span class="prp">30.25</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
+        <!-- Menu 4 -->
         <div class="menu-item">
           <div class="img-con">
-            <img src="images/menu-4.jpg" alt="" />
+            <img src="images/menu-4.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Tasty And Healthy</h3>
           <h2 class="item-price">$16.30 <span class="prp">19.49</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
+        <!-- Menu 5 -->
         <div class="menu-item">
           <div class="img-con">
-            <img src="images/menu-5.jpg" alt="" />
+            <img src="images/menu-5.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Tasty And Healthy</h3>
           <h2 class="item-price">$18.37 <span class="prp">19.55</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
+        <!-- Menu 6 -->
         <div class="menu-item">
           <div class="img-con">
-            <img src="images/menu-6.jpg" alt="" />
+            <img src="images/menu-6.jpg" class="product-img" alt="" />
           </div>
-          <h3>Tasty And Healthy</h3>
+          <h3 class="product-title">Tasty And Healthy</h3>
           <h2 class="item-price">$17.27 <span class="prp">20.27</span></h2>
           <button class="btn add-cart">Add To Cart</button>
         </div>
@@ -432,7 +429,10 @@
         <a href="#contact">contact</a>
         <a href="#blogs">blogs</a>
       </div>
-      <p>&copy; 2023 <span class="rights">Coffee Shop</span>, All Rights Reserved!</p>
+      <p>
+        &copy; 2023 <span class="rights">Coffee Shop</span>, All Rights
+        Reserved!
+      </p>
 
       <a href="#" class="to-top" id="to-top">
         <i class="fas fa-long-arrow-up"></i>

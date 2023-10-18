@@ -7,9 +7,23 @@ const shoppingCart = document.querySelector(".shopping-cart-container");
 const toTop = document.querySelector("#to-top");
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header .navbar a");
-const closeCart = document.querySelector(".close-cart");
 const removeItem = document.querySelectorAll(".remove-item");
 const addCartBtn = document.querySelectorAll(".add-cart");
+
+// Cart Open Close
+let cartIcon = document.querySelector("#cart-icon");
+let cart = document.querySelector(".cart");
+let closeCart = document.querySelector("#close-cart");
+
+// Open Cart
+cartIcon.onclick = () => {
+  cart.classList.add("active");
+};
+
+// Close Cart
+closeCart.onclick = () => {
+  cart.classList.remove("active");
+};
 
 searchIcon.onclick = () => {
   searchBox.classList.toggle("active");
@@ -28,10 +42,6 @@ shoppingIcon.onclick = () => {
   shoppingCart.classList.toggle("active");
   navbar.classList.remove("active");
   searchBox.classList.remove("active");
-};
-
-closeCart.onclick = () => {
-  shoppingCart.classList.remove("active");
 };
 
 addCartBtn.forEach((item) => {
